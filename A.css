@@ -1,0 +1,19 @@
+body{margin:0;border:0;padding:0;background-color:#eee;}
+.clear{clear:both;}
+
+
+.thread_M{border:solid 1px #ccc;background-color:#fff;max-width:360px;margin:15px 10px;padding:4px 0 0 0;font-size:15px;border-radius:2px;}
+.thread_M .title{font-size:14px;font-family:Roboto,arial,sans-serif;margin-bottom:4px;padding:0 16px;}
+.thread_M .content{min-height:180px;font-size:13px;padding:0 16px;}
+
+.uBlock{font-family:'Î¢ÈíÑÅºÚ';font-size:8px;margin-bottom:6px;float:right;position:relative;margin-right:4px;}
+.uBlock img{width:26px;height:26px;border-radius:13px;float:right;position:absolute;right:0px;top:0px;}
+.uBlock .name{color:#666;margin-right:30px;padding:0 5px;}
+.uBlock .time{color:#aaa;margin-right:30px;padding:0 5px;}
+
+.repo{background-color:#efefef;border-top:1px solid #ccc;}
+.repo .re{margin:0px 19px;padding:12px 0px;border-top:1px solid #ccc;}
+.repo .re:first-child{border-top:0px;}
+.repo .re .uBlock{margin-bottom:6px;}
+.repo .re .floor{font-size:13px;font-family:'Î¢ÈíÑÅºÚ';font-weight:bold;color:#515151;}
+.repo .re .content{min-height:20px;}
