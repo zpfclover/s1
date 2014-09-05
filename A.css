@@ -1,19 +1,32 @@
 ﻿body{margin:0;border:0;padding:0;background-color:#eee;}
 .clear{clear:both;}
-
+.Block{position:relative;}
 
 .thread_M{border:solid 1px #ccc;background-color:#fff;max-width:360px;margin:15px 10px;padding:4px 0 0 0;font-size:15px;border-radius:2px;}
 .thread_M .title{font-size:14px;font-family:Roboto,arial,sans-serif;margin-bottom:4px;padding:0 16px;}
-.thread_M .content{min-height:180px;font-size:13px;padding:0px 16px 8px 16px;}
+.thread_M .content{min-height:80px;font-size:13px;padding:0px 16px 8px 16px;max-height:260px;overflow:hidden;}
+.thread_M .content img{max-width:328px;}
+.thread_M .noMaxHeight{max-height:none;}
+
+.tag{background-color:#fafafa;box-shadow:1px 1px 1px #ccc;font-size:12px;-webkit-text-size-adjust:none;position:absolute;left:-5px;top:10px;padding:3px 6px 2px;color:#767676;border-left:5px solid #000;}
 
 .uBlock{font-family:'微软雅黑';font-size:8px;margin-bottom:6px;float:right;position:relative;margin-right:4px;}
 .uBlock img{width:26px;height:26px;border-radius:13px;float:right;position:absolute;right:0px;top:0px;}
 .uBlock .name{color:#666;margin-right:30px;padding:0 5px;}
 .uBlock .time{color:#aaa;margin-right:30px;padding:0 5px;}
 
-.repo{background-color:#efefef;border-top:1px solid #ccc;}
+.repo{background-color:#efefef;border-top:1px solid #ccc;max-height:400px;overflow:scroll;}
 .repo .re{margin:0px 19px;padding:12px 0px;border-top:1px solid #ccc;}
 .repo .re:first-child{border-top:0px;}
 .repo .re .uBlock{margin-bottom:6px;}
 .repo .re .floor{font-size:13px;font-family:'微软雅黑';font-weight:bold;color:#515151;}
 .repo .re .content{min-height:20px;}
+.repo .content img{max-width:290px;}
+
+.viewAll{padding:8px 20px;text-align:left;font-size:12px;cursor:pointer;color:#acacac;}
+.viewAll:hover{color:#3267ee;text-decoration:underline;}
+
+::-webkit-scrollbar-track-piece{width:10px;background-color:transparent}
+::-webkit-scrollbar{width:4px;height:6px}
+::-webkit-scrollbar-thumb{height:10px;background-color:rgba(0,0,0,0.1);}
+::-webkit-scrollbar-thumb:hover{background:#aeaeae;cursor:pointer;}

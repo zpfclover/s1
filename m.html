@@ -2,20 +2,37 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="A.css">
+		<script type="text/javascript" src="jquery.js"></script>
 	</head>
 	<body>
 		<div class="thread_M">
-			<div class="Block"><div class="uBlock">
+			<div class="Block">
+			  <div class="tag">标签</div>
+				<div class="uBlock">
 				<div class="name">zpfclover</div>
 				<div class="time">上午 11:21</div>
 				<img src="icon.png" />
 			</div><div class="clear"></div></div>
 			<div class="Block">
 				<div class="title">测试主题</div>
-				<div class="content">测试内容</div>
+				<div class="content">■宣稱為美國空襲伊拉克「付出了代價」，然後慘遭斬首。 路透社
+                                                
+繼美國記者福利遭斬首後，極端組織「伊拉克和黎凡特伊斯蘭國」(ISIL)再宣布殺害另一名美國記者。ISIL前日在網上發布美國記者索特洛夫被斬首的短片，武裝分子更警告美國總統奧巴馬：「我回來了，奧巴馬。」並威脅若美國不停止空襲伊拉克，下一個被處決的將是英國人質海恩斯。
+ISIL發布名為《給美國的第二段訊息》的約5分鐘短片，片中身穿橙色囚衣的索特洛夫，聲稱自己為美國政府空襲伊拉克的決定「付出了代價」，然後被黑衣蒙面武裝分子斬首，兇手疑是早前殺害福利的英國聖戰分子「約翰」。美英兩國昨日先後證實片段真確。
+母求放人不果  兩美國人仍遭挾持
+武裝分子點名向奧巴馬發出警告：「因為你無視警告，繼續對ISIL的傲慢外交政策，堅持轟炸。當你的導彈繼續轟炸我們的人，我們的刀將繼續刺向你國民的頸項。」
+31歲的索特洛夫曾為《時代》周刊及《外交政策》雜誌等媒體擔任自由撰稿記者，一年前在敘利亞失蹤。在福利被斬首短片中，索特洛夫曾在片尾現身，當時武裝分子警告，若奧巴馬不停止空襲伊拉克，索特洛夫就是下個身首異處的人。
+索特洛夫母親上周曾發放影片，請求極端組織領袖釋放兒子。索特洛夫家人前日透過發言人說：「家人知悉這宗可怕的悲劇，感到非常悲痛，但在這困難時刻不會發表任何公開聲明。」
+白宮發言人歐內斯特前日稱，華府此前已投放大量時間和資源試圖營救索特洛夫。國務院發言人普薩基稱，相信仍有「少數」美國人被ISIL挾持，但拒絕透露詳情。據最先取得斬首片段的美國反恐情報組織SITE稱，目前仍有至少兩名美國人質被ISIL挾持，包括一名在敘利亞參與人道救援工作的26歲女子。
+武裝分子挑釁普京  美向伊增兵350人
+奧巴馬前日應國務院要求，授權國防部向伊拉克增派約350名軍事人員，保護美國在伊首都巴格達的外交設施和人員，但不會執行作戰任務。國防部還將根據形勢發展，計劃更多軍事行動。負責保護駐伊使館的美軍將達到820人。
+ISIL又發放一段新短片，指名道姓向俄羅斯總統普京發出恐嚇，聲言會在北高加索地區發動戰爭，「按真神阿拉之意解放車臣」。這是首次有ISIL成員挑釁普京。
+影片據信是在敘國拉卡省一個被ISIL佔領的機場拍攝，可見一名ISIL成員坐在戰機上說：「這段訊息是給你的，普京！這些是你送給（敘總統）巴沙爾的戰機，我們現在把它送回給你。」他又形容普京的執政地位已受到動搖，「當我們抵達俄羅斯的時候，你便會倒下，我們已經啟程！」 ■美聯社/路透社/法新社/《紐約時報》/ 《莫斯科時報》</div>
 			</div>
+			<div class="viewAll" onclick='OpenOrClose(this)' O="false">阅读完整内容</div>
 			<div class="Block">
 				<div class="repo">
+
 					<div class="re">
 						<div class="uBlock">
 							<img src="icon.png" />
@@ -24,7 +41,7 @@
 						</div>
 						<div class="floor">3L</div>
 						<div class="clear"></div>
-						<div class="content">中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文</div>
+						<div class="content">中文中文中文</div>
 					</div>
 					<div class="re">
 						<div class="uBlock">
@@ -49,6 +66,24 @@
 				</div>
 			</div>
 		</div>
+		
+		<script type="text/javascript">
+			function OpenOrClose(_this){
+			console.log("sss");
+				if($(_this).attr('O')=='false'){
+					var A=$(_this).prev().children('.content');
+					$(A).addClass('noMaxHeight');
+					$(_this).html('收起');
+					$(_this).attr({'O':'true'});
+				}
+				else{
+					var A=$(_this).prev().children('.content');
+					$(A).removeClass('noMaxHeight');
+					$(_this).html('阅读完整内容');
+					$(_this).attr({'O':'false'});
+				}
+			}
+		</script>
 	</body>
 </html>
 
