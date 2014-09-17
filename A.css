@@ -1,8 +1,10 @@
 ﻿body{margin:0;border:0;padding:0;background-color:#eee;}
 .clear{clear:both;}
 .Block{position:relative;}
+img{margin:3px 0px;}
+.thread_M blockquote{margin:0;margin-left:8px;}
 
-.thread_M{border:solid 1px #ccc;background-color:#fff;max-width:360px;margin:15px 10px;padding:4px 0 0 0;font-size:15px;border-radius:2px;}
+.thread_M{border:solid 1px #ccc;background-color:#fff;max-width:360px;margin:15px 10px;padding:4px 0 0 0;font-size:15px;border-radius:2px;display:inline-block;vertical-align:top;position:relative;}
 .thread_M .title{font-size:14px;font-family:Roboto,arial,sans-serif;margin-bottom:4px;padding:0 16px;}
 .thread_M .content{min-height:80px;font-size:13px;padding:0px 16px 8px 16px;max-height:260px;overflow:hidden;}
 .thread_M .content img{max-width:328px;}
@@ -25,6 +27,11 @@
 
 .viewAll{padding:8px 20px;text-align:left;font-size:12px;cursor:pointer;color:#acacac;}
 .viewAll:hover{color:#3267ee;text-decoration:underline;}
+
+.delete{width:18px;height:18px;border-radius:18px;border:3px solid #fff;background-color:#cc4444;color:#fff;font-weight:bold;text-align:center;font-family:'微软雅黑';line-height:120%;font-size:14px;cursor:pointer;position:absolute;top:-9px;right:-9px;display:none;}
+.thread_M:hover .delete{display:block;}
+
+.info{border-bottom:3px solid #fafafa;background-color:#ffffcc;padding:5px 8px;font-family:'微软雅黑';font-size:13px;color:#4a5b6c;position:relative;top:-3px;}
 
 ::-webkit-scrollbar-track-piece{width:10px;background-color:transparent}
 ::-webkit-scrollbar{width:4px;height:6px}

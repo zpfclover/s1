@@ -19,5 +19,5 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
-  "web_accessible_resources": [ "background.js", "jquery.js", "do.js"]
+  "web_accessible_resources": [ "background.js", "jquery.js", "do.js","func.js"]
 }
